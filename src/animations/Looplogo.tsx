@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react';
-import { IoIosStarOutline } from "react-icons/io";
 import sonicRunning from "../assets/sonic-running.gif"
 
 import gsap from 'gsap';
