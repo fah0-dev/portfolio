@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import image from "../assets/untitled.jpg"
+import image from "../assets/Untitled.jpg"
 import RedJohn from "../assets/redjohn.png"
 import { useJaneAnimation } from "../animations/useJaneAnimation"
 
