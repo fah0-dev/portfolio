@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+.fontDomine {
+    font-family: 'Domine', serif;
+}
+
+.fontInter {
+    font-family: 'Inter', sans-serif;
+}
+
+.app-container {
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    top: 0;
+    right: 0;
+    height: auto;
+    gap: 10px;
+    display: flex;
+    background-color: #000;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.drop-cap-img {
+    float: left;
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain !important;
+    background-size: 100% 100% !important;
+    margin-right: 0.75rem;
+    margin-top: 0.25rem;
+    shape-outside: margin-box;
+}
