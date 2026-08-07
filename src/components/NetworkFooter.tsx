@@ -2,6 +2,7 @@ import { useSocialMarqueeAnimation } from '../animations/useSocialMarqueeAnimati
 import { socialLogos } from '../content/sociallogo'
 import { IoIosStarOutline } from 'react-icons/io'
 
+
 const NetworkFooter = () => {
   const { trackRef, handleMouseEnter, handleMouseLeave } = useSocialMarqueeAnimation(100)
   const copies = 4
@@ -55,7 +56,6 @@ const NetworkFooter = () => {
       </div>
 
       {/* Blue Divider Line */}
-      <div className="w-full h-1 bg-[#1D4ED8]" />
     </div>
   )
 }

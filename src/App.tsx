@@ -3,17 +3,26 @@ import Jane from './components/Jane'
 import Sonic from './components/Sonic'
 import Skills from './components/Skills'
 import NetworkFooter from './components/NetworkFooter'
+import MobileLayout from './components/MobileLayout'
 import RedJohn from './assets/redjohn.png'
 import { useSmoothScroll } from './animations/useSmoothScroll'
 import { useRedJohnAnimation } from './animations/useRedJohnAnimation'
+import { useIsMobile } from './hooks/useIsMobile'
 import './App.css'
 
 function App() {
   const sectionRef = useRef<HTMLDivElement>(null)
   const imageRef = useRef<HTMLImageElement>(null)
+  const isMobile = useIsMobile()
 
+  // Smooth scroll & Red John animation only on desktop/tablet
   useSmoothScroll()
   useRedJohnAnimation(sectionRef, imageRef)
+
+  // Mobile gets a separate optimized layout
+  if (isMobile) {
+    return <MobileLayout />
+  }
 
   return (
     <div className="app-container">
@@ -64,6 +73,7 @@ function App() {
           />
         </div>
       </div>
+      
     </div>
   )
 }
