@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import image from "../assets/untitled.jpg"
-import RedJohn from "../assets/redJohn.png"
+import RedJohn from "../assets/redjohn.png"
 import { useJaneAnimation } from "../animations/useJaneAnimation"
 
 const Jane = () => {
