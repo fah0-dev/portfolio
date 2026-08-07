@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { IoIosStarOutline } from "react-icons/io";
+import sonicRunning from "../assets/sonic-running.gif"
 
 import gsap from 'gsap';
 
@@ -111,8 +112,8 @@ function LogoLoop({
           >
             {items.map((item, i) => (
                 <>
-                <IoIosStarOutline className='text-6xl text-rose-500' />
-              <span
+                  <img width={70} src={sonicRunning} alt="" />
+                <span
                 key={i}
                 className="shrink-0 select-none  whitespace-nowrap"
                 style={{

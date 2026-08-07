@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import sonic from '../assets/sonic.svg'
+import sonic from '../assets/sonic.png'
 import spongebob from '../assets/2ik1n5xxs8x71.gif'
 import texture from '../assets/texture.png'
 import { useSonicAnimation } from '../animations/useSonicAnimation'
